@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+import heroBg from '../assets/hero.jpg'; 
 
 interface EnhancedHeroProps {
   scrollToOurWedding: () => void;
@@ -16,9 +17,7 @@ const EnhancedHero = ({ scrollToOurWedding }: EnhancedHeroProps) => {
     <section className="relative h-screen overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')",
-        }}
+        style={{ backgroundImage: `url(${heroBg})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
       </div>

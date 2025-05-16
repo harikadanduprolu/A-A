@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import heroBg from '../assets/hero.jpg'; 
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,8 +14,8 @@ const Hero = () => {
     <section className="relative h-screen bg-gray-100 overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')" }}
-      >
+        style={{ backgroundImage: `url(${heroBg})` }}
+         >
         <div className="absolute inset-0 bg-black/20" />
       </div>
       
@@ -27,7 +28,7 @@ const Hero = () => {
         
         <div className={`transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100' : 'opacity-0 translate-y-4'}`}>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-center mb-4">
-            Sarah & Michael
+            Sa
           </h1>
         </div>
         
@@ -54,7 +55,7 @@ const Hero = () => {
           aria-label="Scroll down"
         >
           <svg 
-            xmlns="http://www.w3.org/2000/svg" 
+            xmlns="" 
             className="h-6 w-6" 
             fill="none" 
             viewBox="0 0 24 24" 
