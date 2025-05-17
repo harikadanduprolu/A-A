@@ -41,7 +41,7 @@ const EnhancedNavbar = ({
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? "bg-white/90 backdrop-blur-sm shadow-sm py-2" 
+          ? "fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black/80 via-black/70 to-black/40 backdrop-blur-md shadow-md" 
           : "bg-transparent py-4"
       }`}
     >
@@ -52,7 +52,7 @@ const EnhancedNavbar = ({
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="text-wedding-dark-gray font-serif text-xl md:text-2xl cursor-pointer"
             >
-              Sarah & Michael
+              Ruhè
             </button>
           </div>
 

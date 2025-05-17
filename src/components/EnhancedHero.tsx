@@ -25,19 +25,21 @@ const EnhancedHero = ({ scrollToOurWedding }: EnhancedHeroProps) => {
       <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 text-white">
         <div className={`transition-all duration-1000 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
           <h4 className="font-sans text-sm md:text-base uppercase tracking-[0.2em] text-center mb-4 font-light">
+            
             We're getting married
           </h4>
         </div>
         
         <div className={`transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-center mb-6 font-light">
-            Sarah & Michael
+          x  
+            Abhinav & Aishwarya
           </h1>
         </div>
         
         <div className={`transition-all duration-1000 delay-500 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
           <p className="font-sans text-lg md:text-xl text-center mb-10 font-light">
-            August 15, 2025 • New York, NY
+            5th June, 2025 
           </p>
         </div>
         
